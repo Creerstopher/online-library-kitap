@@ -507,3 +507,100 @@ footer {
 
     color: #DAD4C8;
 }
+
+/*Editing*/
+
+.edit {
+    margin-top: 65px;
+}
+
+.edit_items {
+    display: flex;
+}
+
+.edit_form form {
+    display: flex;
+    gap: 20px;
+}
+
+.edit_form_column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.edit_form_text {
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    border: none;
+    border-bottom: 2px solid #DAD4C8;
+
+    color: #DAD4C8;
+    background: none;
+
+    padding: 8px 0;
+}
+
+.edit_form_submit {
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+    border: none;
+    background: none;
+    padding: 8px 0;
+
+    color: #DAD4C8;
+    cursor: pointer;
+
+    margin-top: 65px;
+}
+
+/*Delete*/
+
+.delete {
+    margin-top: 65px;
+    height: 38vh;
+}
+
+.delete_items {
+    display: flex;
+}
+
+.delete_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.delete_info p {
+    font-family: 'Soyuz Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+
+    color: #DAD4C8;
+}
+
+.delete_info_btn {
+    display: flex;
+    gap: 100px;
+
+    margin-top: 130px;
+}
+
+.delete_info_btn a {
+    font-family: 'Soyuz Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 23px;
+
+    color: #DAD4C8;
+
+}

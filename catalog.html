@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>каталог - китап</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
 <header>
     <div class="container">
         <div class="header-items">
+            <input type="checkbox" id="burger">
+            <label for="burger"></label>
             <nav>
                 <li class="header-user"><a href="auth.html">Карим</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Новости</a></li>
                 <li><a href="#">Админ-панель</a></li>
             </nav>
@@ -26,21 +29,25 @@
     <div class="container">
         <h2>каталог</h2>
         <div class="nb_items">
-            <div class="filter empty_block">
-                <h3>жанр</h3>
-                <ul>
-                    <li>поэзия</li>
-                    <li>фантазия</li>
-                    <li>проза</li>
-                    <li>классика</li>
-                </ul>
-                <h3>язык</h3>
-                <ul>
-                    <li>татарский</li>
-                    <li>русский</li>
-                    <li>английский</li>
-                    <li>японский</li>
-                </ul>
+            <div class="filter">
+                <div class="filter_filter">
+                    <h3>жанр</h3>
+                    <ul>
+                        <li>поэзия</li>
+                        <li>фантазия</li>
+                        <li>проза</li>
+                        <li>классика</li>
+                    </ul>
+                </div>
+                <div class="filter_filter">
+                    <h3>язык</h3>
+                    <ul>
+                        <li>татарский</li>
+                        <li>русский</li>
+                        <li>английский</li>
+                        <li>японский</li>
+                    </ul>
+                </div>
             </div>
             <div class="table">
                 <table>

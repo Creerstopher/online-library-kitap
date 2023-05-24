@@ -221,7 +221,7 @@ td {
 }
 
 .table_more {
-    text-align: right;
+    text-align: center;
 }
 
 .empty_block h3 {
@@ -602,5 +602,132 @@ footer {
     line-height: 23px;
 
     color: #DAD4C8;
+}
 
+/*Item*/
+
+.item {
+    margin-top: 65px;
+}
+
+.item_author {
+    font-family: 'Soyuz Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+
+    color: #DAD4C8;
+}
+
+.item_items {
+    display: flex;
+    margin-top: 25px;
+    gap: 5%;
+}
+
+.item_items img {
+    width: 25%;
+}
+
+.item_info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item_info_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_info_top p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: start;
+    text-align: right;
+
+    /* Light Grey */
+
+    color: #DAD4C8;
+}
+
+.item_info_middle p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: flex-end;
+    text-align: justify;
+
+    /* Light Grey */
+
+    color: #DAD4C8;
+}
+
+.item_info_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item_info_bottom button {
+    background: none;
+    border-radius: 15px;
+    border: 2px solid #DAD4C8;
+    padding: 15px 30px;
+
+    font-family: 'Soyuz Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+
+    /* Light Grey */
+
+    color: #DAD4C8;
+}
+
+.item_info_bottom p {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    display: flex;
+    align-items: flex-end;
+    text-align: justify;
+
+    /* Light Grey */
+
+    color: #DAD4C8;
+}
+
+/*Admin*/
+
+.admin {
+    margin-top: 65px;
+}
+
+.admin_books_items {
+    display: flex;
+}
+
+.admin_news_items {
+    display: flex;
+    margin-top: 65px;
+}
+
+.admin_users_items {
+    display: flex;
+    margin-top: 65px;
 }

@@ -785,6 +785,10 @@ footer {
     .item_info_bottom p {
         font-size: 14px;
     }
+
+    .edit_form_column {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 390px) {

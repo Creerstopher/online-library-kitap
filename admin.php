@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>1984 - китап</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-<header>
-    <div class="container">
-        <div class="header-items">
-            <input type="checkbox" id="burger">
-            <label for="burger"></label>
-            <nav>
-                <li class="header-user"><a href="auth.html">Карим</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Админ-панель</a></li>
-            </nav>
-            <div class="header_text">
-                <p class="pretitle">живи, люби, читай</p>
-                <a href="index.html" class="title">КИТАП</a>
-            </div>
-        </div>
-    </div>
-</header>
 <div class="admin">
     <div class="container">
         <h2>админ-панель</h2>
@@ -37,7 +10,10 @@
                     <tr>
                         <td></td>
                         <td></td>
-                        <td class="table_more"><img src="assets/img/icons/Huge-icon/interface/outline/plus.svg" alt="">
+                        <td class="table_more">
+                            <a href="?page=add">
+                                <img src="assets/img/icons/Huge-icon/interface/outline/plus.svg" alt="">
+                            </a>
                         </td>
                     </tr>
                     <tr>
@@ -65,7 +41,7 @@
                                                     alt=""></td>
                     </tr>
                 </table>
-                <a class="open_all-btn" href="catalog.html">смотреть все</a>
+                <a class="open_all-btn" href="catalog.php">смотреть все</a>
             </div>
         </div>
         <div class="admin_news_items">
@@ -97,7 +73,7 @@
                                                     alt=""></td>
                     </tr>
                 </table>
-                <a class="open_all-btn" href="catalog.html">смотреть все</a>
+                <a class="open_all-btn" href="catalog.php">смотреть все</a>
             </div>
         </div>
         <div class="admin_users_items">
@@ -125,18 +101,8 @@
                                                     alt=""></td>
                     </tr>
                 </table>
-                <a class="open_all-btn" href="catalog.html">смотреть все</a>
+                <a class="open_all-btn" href="catalog.php">смотреть все</a>
             </div>
         </div>
     </div>
 </div>
-<footer>
-    <div class="container">
-        <div class="footer_items">
-            <p class="footer_text_1">@ 2023 zagiduulin</p>
-            <p class="footer_text_2">китап</p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>

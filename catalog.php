@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>каталог - китап</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-<header>
-    <div class="container">
-        <div class="header-items">
-            <input type="checkbox" id="burger">
-            <label for="burger"></label>
-            <nav>
-                <li class="header-user"><a href="auth.html">Карим</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Админ-панель</a></li>
-            </nav>
-            <div class="header_text">
-                <p class="pretitle">живи, люби, читай</p>
-                <a href="index.html" class="title">КИТАП</a>
-            </div>
-        </div>
-    </div>
-</header>
 <div class="new_books">
     <div class="container">
         <h2>каталог</h2>
@@ -176,13 +149,3 @@
         </div>
     </div>
 </div>
-<footer>
-    <div class="container">
-        <div class="footer_items">
-            <p class="footer_text_1">@ 2023 zagiduulin</p>
-            <p class="footer_text_2">китап</p>
-        </div>
-    </div>
-</footer>
-</body>
-</html>

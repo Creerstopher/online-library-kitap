@@ -10,6 +10,10 @@
     -webkit-box-sizing: border-box;
 }
 
+* a {
+    cursor: pointer;
+}
+
 .container {
     margin: 0 70px;
     padding: 0;
@@ -44,7 +48,7 @@ body {
 }
 
 h2 {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -177,7 +181,7 @@ td {
 .table_title {
     width: 60%;
 
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -188,7 +192,7 @@ td {
 .table_genre {
     width: 35%;
 
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -200,7 +204,7 @@ td {
 .table_date {
     width: 20%;
 
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -211,7 +215,7 @@ td {
 
 .table_news_title {
     width: 75%;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -219,11 +223,11 @@ td {
 
     color: #DAD4C8;
 
-    padding: 16px 0px;
+    padding: 16px 0;
 }
 
 .open_all-btn {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -242,7 +246,7 @@ td {
     margin-top: 30px;
     margin-bottom: 20px;
 
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -259,7 +263,7 @@ ul {
 }
 
 .filter li {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -290,7 +294,7 @@ ul {
 }
 
 .marquee {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
@@ -303,7 +307,7 @@ ul {
 }
 
 .marquee-border {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 128px;
@@ -327,11 +331,11 @@ ul {
 
     align-items: center;
 
-    margin: 76px 0px;
+    margin: 76px 0;
 }
 
 .email_form_text {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -360,7 +364,7 @@ ul {
     border: none;
 
     color: #DAD4C8;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -378,11 +382,19 @@ ul {
     background: #2E3E24;
 
     color: #DAD4C8;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    transition: 0.2s;
+}
+
+.email_form_submit:hover {
+    background: #DAD4C8;
+    color: #2E3E24;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .email_div_form {
@@ -404,7 +416,7 @@ ul {
 .who_text {
     width: 60%;
 
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -415,7 +427,7 @@ ul {
 }
 
 .who_text_first {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-size: 128px;
 }
 
@@ -432,7 +444,7 @@ footer {
 }
 
 .footer_text_1 {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -446,7 +458,7 @@ footer {
 }
 
 .footer_text_2 {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -481,7 +493,7 @@ footer {
 }
 
 .form_login, .form_password {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -496,7 +508,7 @@ footer {
 }
 
 .form_done {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -510,7 +522,7 @@ footer {
 }
 
 .auth_div_form p {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -520,7 +532,7 @@ footer {
 }
 
 .auth_div_form a {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -599,7 +611,7 @@ footer {
 }
 
 .delete_info p {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -616,7 +628,7 @@ footer {
 }
 
 .delete_info_btn a {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -632,7 +644,7 @@ footer {
 }
 
 .item_author {
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -664,7 +676,7 @@ footer {
 }
 
 .item_info_top p {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -679,7 +691,7 @@ footer {
 }
 
 .item_info_middle p {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -699,13 +711,13 @@ footer {
     align-items: flex-end;
 }
 
-.item_info_bottom button {
+.item_info_bottom a {
     background: none;
     border-radius: 15px;
     border: 2px solid #DAD4C8;
     padding: 15px 30px;
 
-    font-family: 'Soyuz Grotesk';
+    font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -716,10 +728,20 @@ footer {
     /* Light Grey */
 
     color: #DAD4C8;
+
+    transition: 0.2s;
+}
+
+.item_info_bottom a:hover {
+    background: #DAD4C8;
+    color: #2E3E24;
+    transition: 0.2s;
+
+    cursor: pointer;
 }
 
 .item_info_bottom p {
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -753,6 +775,140 @@ footer {
     margin-top: 65px;
 }
 
+/*About Us*/
+
+.about_us {
+    margin-top: 65px;
+}
+
+.about_items {
+    display: flex;
+}
+
+.about_text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about_address {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.about_address p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #DAD4C8;
+}
+
+.about_text_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about_text_text p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    color: #DAD4C8;
+}
+
+.about_btn {
+    display: flex;
+    gap: 15px;
+}
+
+.about_btn_download {
+    background: none;
+    border-radius: 15px;
+    border: 2px solid #DAD4C8;
+    padding: 15px 30px;
+
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    display: flex;
+    align-items: flex-end;
+
+    /* Light Grey */
+
+    color: #DAD4C8;
+
+    transition: 0.2s;
+}
+
+.about_btn_download:hover {
+    background: #DAD4C8;
+    color: #2E3E24;
+    transition: 0.2s;
+}
+
+/*Lost*/
+
+.lost {
+    margin-top: 65px;
+    height: 62vh;
+}
+
+.lost_items {
+    display: flex;
+}
+
+.lost_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    text-align: right;
+}
+
+.lost_text h1 {
+    font-size: 256px;
+    font-family: 'Soyuz Grotesk', sans-serif;
+
+    color: #DAD4C8;
+}
+
+.lost_text p {
+    font-size: 24px;
+    font-family: 'Helvetica', sans-serif;
+
+    color: #DAD4C8;
+}
+
+.lost_text a {
+    background: none;
+    border-radius: 15px;
+    border: 2px solid #DAD4C8;
+    padding: 15px 30px;
+    margin-top: 25px;
+
+    font-family: 'Soyuz Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+
+    color: #DAD4C8;
+
+    transition: 0.2s;
+}
+
+.lost_text a:hover {
+    background: #DAD4C8;
+    color: #2E3E24;
+    transition: 0.2s;
+
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1024px) {
     .who_text_first {
         font-size: 24px;
@@ -777,7 +933,7 @@ footer {
         line-height: 20px;
     }
 
-    .item_info_bottom button {
+    .item_info_bottom a {
         font-size: 14px;
         padding: 5px 15px;
     }
@@ -900,38 +1056,37 @@ footer {
     }
 
     /*    Items*/
-
-    .item_items{
+    .item_items {
         flex-direction: column;
         gap: 25px;
     }
 
-    .item_items img{
+    .item_items img {
         width: 100%;
     }
 
-    .item_info{
+    .item_info {
         flex-direction: column-reverse;
         width: 100%;
     }
 
-    .item_info_bottom{
+    .item_info_bottom {
         flex-direction: column;
         gap: 10px;
     }
 
-    .item_info_bottom button{
+    .item_info_bottom button {
         font-size: 16px;
         display: unset;
         width: 100%;
         text-align: center;
     }
 
-    .item_info_middle p{
+    .item_info_middle p {
         font-size: 18px;
     }
 
-    .item_info_top p{
+    .item_info_top p {
         font-size: 16px;
     }
 }

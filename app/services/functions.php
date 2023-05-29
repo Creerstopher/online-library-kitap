@@ -29,3 +29,16 @@ function redirect($to = 'index', $prams = "")
     header("Location: $url");
     die();
 }
+
+function auth()
+{
+    return isset($_SESSION['AUTH_ID']) ? intval($_SESSION['AUTH_ID']) : false;
+}
+
+function isAdmin($id)
+{
+    global $database;
+    $user = $database->query("SELECT `role` FROM `users` WHERE `id` = '$id'")->fetch(2);
+
+    return $user['role'] === 1;
+}

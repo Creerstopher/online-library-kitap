@@ -1,3 +1,5 @@
+<?php include('../services/functions.php'); ?>
+
 <header>
     <div class="container">
         <div class="header-items">
@@ -5,11 +7,17 @@
             <label for="burger"></label>
             <nav>
                 <ul>
-                    <li class="header-user"><a href="?page=auth">Вход</a></li>
-                    <li><a href="?page=catalog">Каталог</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="?page=about">О нас</a></li>
-                    <li><a href="?page=admin">Админ-панель</a></li>
+                    <?php if (auth()): ?>
+                        <li><a href="?page=catalog">Каталог</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="?page=about">О нас</a></li>
+                        <?php if (isAdmin($_SESSION['AUTH_ID'])): ?>
+                            <li><a href="?page=admin">Админ-панель</a></li>
+                        <?php endif; ?>
+                        <li><a href="../services/functions.php">Выход</a></li>
+                    <?php else: ?>
+                        <li class="header-user"><a href="?page=auth">Вход</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
             <div class="header_text">

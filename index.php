@@ -1,4 +1,17 @@
-<?php include('app/components/Connection.php'); ?>
+<?php global $database;
+session_start();
+include('app/components/Connection.php'); ?>
+
+<?php
+unset($_SESSION['errors']);
+
+if (isset($_GET['delete_id'])) {
+    $id = $_GET['delete_id'];
+    $state = $database->prepare("DELETE FROM `catalog` WHERE id = '$id'");
+    $state->execute();
+    echo "Товар $id успешно удален!";
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -26,22 +39,22 @@ if (isset($_GET['page'])) {
             include('admin.php');
             break;
         case 'auth':
-            include('auth.html');
+            include('auth.php');
             break;
         case 'catalog':
             include('catalog.php');
             break;
         case 'delete':
-            include('delete.html');
+            include('delete.php');
             break;
         case 'edit':
-            include('edit.html');
+            include('edit.php');
             break;
         case 'item':
             include('item.php');
             break;
         case 'reg':
-            include('reg.html');
+            include('reg.php');
             break;
         default:
             http_response_code(404);
@@ -51,6 +64,8 @@ if (isset($_GET['page'])) {
 } else {
     include('main.php');
 }
+
+include('app/components/FormErrors.php');
 
 include('app/components/Footer.php'); ?>
 </body>

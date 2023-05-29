@@ -24,8 +24,10 @@ $item = $database->query("SELECT * FROM `catalog` WHERE id=" . $id)->fetch(2);
                     <p><?= $item['book_description']; ?></p>
                 </div>
                 <div class="item_info_bottom">
-                    <a>Сохранить себе</a>
-                    <a>Скачать</a>
+                    <div class="item_info_bottom_buttons">
+                        <a>Сохранить себе</a>
+                        <a href="<?= $item['book_file']; ?>">Скачать</a>
+                    </div>
                     <p><?= $item['book_neuter']; ?> @ <?= $item['book_collection']; ?></p>
                 </div>
             </div>

@@ -1,3 +1,19 @@
+<?php
+
+session_start();
+
+require_once('app/database/Database.php');
+
+if (!isAdmin($_SESSION['AUTH_ID'])){
+    header("Location: /index.php?page=тыкудазабрёлмальчик");
+    die();
+}
+
+global $database;
+$catalog = $database->query("SELECT * FROM `catalog`")->fetchAll(2);
+
+?>
+
 <div class="admin">
     <div class="container">
         <h2>админ-панель</h2>
@@ -16,30 +32,25 @@
                             </a>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="table_title">1984</td>
-                        <td class="table_genre">Фантастика</td>
-                        <td class="table_more"><img src="assets/img/icons/Huge-icon/interface/outline/setting.svg"
-                                                    alt=""></td>
-                    </tr>
-                    <tr>
-                        <td class="table_title">особенность конкретного простора</td>
-                        <td class="table_genre">Поэзия</td>
-                        <td class="table_more"><img src="assets/img/icons/Huge-icon/interface/outline/setting.svg"
-                                                    alt=""></td>
-                    </tr>
-                    <tr>
-                        <td class="table_title">особенность конкретного простора</td>
-                        <td class="table_genre">Поэзия</td>
-                        <td class="table_more"><img src="assets/img/icons/Huge-icon/interface/outline/setting.svg"
-                                                    alt=""></td>
-                    </tr>
-                    <tr>
-                        <td class="table_title">особенность конкретного простора</td>
-                        <td class="table_genre">Поэзия</td>
-                        <td class="table_more"><img src="assets/img/icons/Huge-icon/interface/outline/setting.svg"
-                                                    alt=""></td>
-                    </tr>
+                    <?php foreach ($catalog as $book): ?>
+                        <tr>
+                            <td><a class="table_title"
+                                   href="?page=item&id=<?= $book['id']; ?>"><?= $book['book_title']; ?></a>
+                            </td>
+                            <td class="table_genre"><?= $book['book_genre']; ?></td>
+                            <td class="table_more">
+                                <div class="dropdown">
+                                    <button class="dropbtn">
+                                        <img src="assets/img/icons/Huge-icon/interface/outline/setting.svg" alt="">
+                                    </button>
+                                    <div class="dropdown-content">
+                                        <a href="?page=edit&id=<?= $book['id']; ?>">Редактировать</a>
+                                        <a href="?page=delete&id=<?= $book['id']; ?>">Удалить</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </table>
                 <a class="open_all-btn" href="catalog.php">смотреть все</a>
             </div>

@@ -715,7 +715,7 @@ footer {
     background: none;
     border-radius: 15px;
     border: 2px solid #DAD4C8;
-    padding: 15px 30px;
+    padding: 15px 30px 13px 30px;
 
     font-family: 'Soyuz Grotesk', sans-serif;
     font-style: normal;
@@ -753,6 +753,11 @@ footer {
     /* Light Grey */
 
     color: #DAD4C8;
+}
+
+.item_info_bottom_buttons {
+    display: flex;
+    gap: 25px;
 }
 
 /*Admin*/
@@ -907,6 +912,15 @@ footer {
     transition: 0.2s;
 
     cursor: pointer;
+}
+
+/*Errors*/
+
+.alert {
+    margin: 10px 0;
+    padding: 25px 15px;
+    background: #DAD4C8;
+    color: #2E3E24;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1089,4 +1103,52 @@ footer {
     .item_info_top p {
         font-size: 16px;
     }
+}
+
+.dropbtn {
+    background: #2E3E24;
+    border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #DAD4C8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: #2E3E24;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {
+    color: #DAD4C8;
+    background: #2E3E24;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
 }

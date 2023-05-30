@@ -1,4 +1,6 @@
-<?php include('../services/functions.php'); ?>
+<?php include('../services/functions.php');
+session_start();
+?>
 
 <header>
     <div class="container">

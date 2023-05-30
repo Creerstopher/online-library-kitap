@@ -1,5 +1,7 @@
 <?php
 global $database;
+session_start();
+
 if (!isset($_GET['id'])) redirect();
 
 $id = $_GET['id'];
@@ -28,6 +30,7 @@ $item = $database->query("SELECT * FROM `catalog` WHERE id=" . $id)->fetch(2);
                         <a>Сохранить себе</a>
                         <a href="<?= $item['book_file']; ?>">Скачать</a>
                     </div>
+
                     <p><?= $item['book_neuter']; ?> @ <?= $item['book_collection']; ?></p>
                 </div>
             </div>

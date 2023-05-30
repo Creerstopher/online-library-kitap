@@ -1,5 +1,6 @@
 <?php
-    session_start();
+global $database;
+session_start();
     require_once('../database/Database.php');
 
     unset($_SESSION['errors']);
@@ -35,7 +36,7 @@
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         // Insert user into database
-        $query = "INSERT INTO users (name, login, password) VALUES (:name, :login, :password)";
+        $query = "INSERT INTO `users` (name, login, password) VALUES (:name, :login, :password)";
         $statement = $database->prepare($query);
         $statement->execute(['name' => $name, 'login' => $login, 'password' => $hashed_password]);
 
